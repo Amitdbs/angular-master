@@ -1,0 +1,61 @@
+<div id="myHeader" (scroll)="onScroll($event)">
+  <app-header></app-header>
+</div>
+<div style="padding-top:80px">
+  <div>
+    <div>
+      <hr style="background-color:#f99831;height:1px;width:98%">
+    </div>
+    <h2 style="color:#f99831;text-align: center;">Contact Us</h2>
+    <div>
+      <hr style="background-color:#f99831;height:1px;width:98%">
+    </div>
+  </div>
+</div>
+<div style="padding:35px">
+  <h3 style="color: #EE7D17;font-weight: 900;font-size: 35px;">Send us a message</h3>
+  <form class="form-vertical" [formGroup]="contactForm">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label">*Full Name</label>
+          <input type="text" class="form-control" fromControlName="name" name="name" placeholder="Your Name" required>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label">*Email ID</label>
+          <input type="email" class="form-control" fromControlName="email" name="email" placeholder="Email ID" required>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label">*Mobile No</label>
+          <input type="text" class="form-control" fromControlName="mobile" name="mobile" placeholder="Contact Number" required>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label">Subject:</label>
+          <input type="text" name="city" fromControlName="city" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label class="control-label">*Describe about you</label>
+          <textarea class="form-control" fromControlName="msg" rows="4" name="msg" placeholder="Message" required></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <button type="button" id="sendContact" class="btn btn-primary" (click)="submit()">SUBMIT</button>
+      </div>
+    </div>
+  </form>
+</div>
+<app-footer></app-footer>

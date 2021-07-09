@@ -1,0 +1,150 @@
+<div id="myHeader" (scroll)="onScroll($event)">
+  <app-header></app-header>
+</div>
+<div [style]=" parmsObj ? 'padding-bottom:10px;padding-top:80px':'padding-bottom:10px'">
+  <div>
+    <div>
+      <div>
+        <hr style="background-color:#f99831;height:1px;width:98%">
+      </div>
+      <div>
+        <h3 style="text-align: center;color:#f99831">Our Products</h3>
+        <h5 style="text-align: center;color:#f99831">Over 1000 different products and 100,000 customised Products</h5>
+      </div>
+      <div>
+        <hr style="background-color:#f99831;height:1px;width:98%">
+      </div>
+    </div>
+    <div class="row" style="padding:10px">
+      <div class="col-sm-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="assets/Images/comp.png" style="width:100%;height:100%;" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                    <h3 style="margin-bottom:10px;color:#ffffff;">Compression Spring</h3>
+                    <p style="padding:10px;font-size:14px;text-align: justify;line-height: 20px;">A type of spring designed to compress and become smaller when pressed with the compressive load. Compression spring normally refers to a coil compression spring.</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button style="margin-top: 3px;" class="button button1" (click)="showProduct(1)">Know More</button>
+              </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/Images/copper.png" style="width:100%;height:100%;" alt="Avatar">
+              </div>
+              <div class="flip-card-back">
+                <h3 style="margin-bottom:10px;color:#ffffff;">Extension Spring</h3>
+                <p style="padding:10px;font-size:14px;text-align: justify;line-height: 20px;">Induction coils are manufactured from copper enamelled wires or bare copper wires in cylindrical or parallel winding shape in single or multiple layers with stripped, tinned or moulded ends.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button style="margin-top: 3px;" class="button button1" (click)="showProduct(2)">Know More</button>
+          </div>
+       </div>
+       <div class="col-sm-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/Images/garter.png" style="width:100%;height:100%;" alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+              <h3 style="margin-bottom:10px;color:#ffffff;">Garter Spring</h3>
+              <p style="padding:10px;font-size:14px;text-align: justify;line-height: 20px;">Garter springs are long, close coiled extension springs with the ends fastened together and then used in the form of a ring to hold mechanical seals on a shaft or to hold round segments together.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button style="margin-top: 3px;" class="button button1" (click)="showProduct(3)">Know More</button>
+        </div>
+     </div>
+     <div class="col-sm-3">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/Images/torsion_spring.jpg" style="width:100%;height:100%;" alt="Avatar">
+          </div>
+          <div class="flip-card-back">
+            <h3 style="margin-bottom:10px;color:#ffffff;">Torison Spring</h3>
+            <p style="padding:10px;font-size:14px;text-align: justify;line-height: 20px;">Torsion springs also known as constant force spring or Clock spring. This type of spring is usually a coiled ribbon of spring steel used for functions such as counter balancing, retrieving, maintaining constant loads, transmitting motion, and clamping.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button style="margin-top: 3px;" class="button button1" (click)="showProduct(4)">Know More</button>
+      </div>
+   </div>
+</div>
+
+<div class="row" style="padding:10px;margin-top: 10px;">
+
+    <div class="col-sm-3">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/Images/diesprings.jpg" style="width:100%;height:100%;" alt="Avatar">
+          </div>
+          <div class="flip-card-back">
+            <h3 style="margin-bottom:10px;color:#ffffff;">Die Spring</h3>
+            <p style="padding:10px;font-size:14px;text-align: justify;line-height: 20px;">Die springs are same as compression spring but made out of Flat wire which can be
+              Square/Rectangular shape.It is categorised in different colour codes depending on its sizes and load capacity. We
+              use chrome alloy material to manufacture this which are equivalent to ISO-10243 and JIS STD.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button style="margin-top: 3px;" class="button button1" (click)="showProduct(5)">Know More</button>
+      </div>
+  </div>
+
+  <div class="col-sm-3">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/Images/feedingsprings.jpg" style="width:100%;height:100%;" alt="Avatar">
+        </div>
+        <div class="flip-card-back">
+          <h3 style="margin-bottom:10px;color:#ffffff;">Feeding Spring</h3>
+          <p style="padding:10px;font-size:14px;text-align: justify;line-height: 20px;">
+            We at Asha springs are the leading suppliers & manufacturers of this springs and supply
+            to almost all the blister manufacturer in the country. we have accomplished this
+            fleet because of regular development in technology and our vision to provide our customers with
+            the best quality product.</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button style="margin-top: 3px;" class="button button1" (click)="showProduct(6)">Know More</button>
+    </div>
+  </div>
+
+  <!-- <div class="col-sm-3">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/Images/clutch.png" style="width:100%;height:100%;" alt="Avatar">
+        </div>
+        <div class="flip-card-back">
+          <h3 style="margin-bottom:10px;color:#ffffff;">Garter Spring</h3>
+          <p style="padding:10px;font-size:14px;text-align: justify;line-height: 20px;">Clutch springs can be found in use on most motorcycle clutch assemblies.</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button style="margin-top: 3px;" class="button button1" (click)="showProduct(7)">Know More</button>
+    </div>
+  </div> -->
+</div>
+</div>
+</div>
+<div id="spy3" *ngIf="parmsObj">
+  <app-footer></app-footer>
+</div>
+
+

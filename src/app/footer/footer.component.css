@@ -1,0 +1,24 @@
+.introClass{
+  width:100%;
+  margin: auto;
+  margin-top:0.5%;
+  padding-top:1%;
+  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color:#ffffff;
+  background-color: #212326;
+}
+
+div{
+  font-size: 13px;
+}
+
+.left{
+  display: block;
+  float:left;
+}
+
+.right{
+  display: block;
+  float:right;
+}
+

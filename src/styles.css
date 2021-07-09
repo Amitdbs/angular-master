@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+/* body {
+    padding-top: 70px;
+    font-family: "Arial";
+    overflow-y: auto;
+    overflow-x: hidden;
+} */
+/* BlinkMacSystemFont,Roboto,Arial,sans-serif */
+
+/* .introClass{
+  width:94%;
+  margin: auto;
+  margin-top:2%;
+  padding-top:1%;
+  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+body{
+  margin:0px;
+  padding:0px;
+  background-color: #263647;
+  color:#ffff;
+  font-family: 'Nunito', sans-serif;
+}

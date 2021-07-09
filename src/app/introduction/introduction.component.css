@@ -1,0 +1,22 @@
+h1,h5{
+  text-align: center;
+  color:#f99831;
+  text-shadow: 1px 1px #572518;
+}
+p{
+  font-size: 1em;
+}
+
+animate__animated {
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 100px) and (max-width: 576px) {
+  p{ font-size: 1em; }
+  .introClass{  width:98% !important;;}
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  p{ font-size: 1em; }
+  .introClass{  width:98% !important;;}
+}

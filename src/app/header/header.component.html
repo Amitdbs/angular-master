@@ -1,0 +1,125 @@
+<div>
+  <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar">
+    <div class="container">
+      <a class="nav-link" href="#">
+        <img src="assets/Images/logo-removebg.png" style="padding-left:5%; height:7ex">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav" style="padding-right: 10px;">
+        <ul class="navbar-nav  m-0 ml-lg-auto p-3 p-lg-0">
+          <li class="d-inline d-lg-none">
+            <button data-toggle="collapse" data-target="#nav" class="close float-right">&times;</button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-truncate font" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <div class="nav-link text-truncate font">Product
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <div class="dropdown-content">
+                <div class="col-sm-12" style="display: flex;width: max-content">
+                  <div class="col-sm-6">
+                    <a (click)="showProduct(1)" class="font" style="width: max-content">Compression Spring</a>
+                    <a (click)="showProduct(2)" class="font" style="width: max-content">Extension Spring</a>
+                    <a (click)="showProduct(3)" class="font" style="width: max-content">Garter Spring</a>
+                    <a (click)="showProduct(4)" class="font" style="width: max-content">Torsion Spring</a>
+                    <a (click)="showProduct(5)" class="font" style="width: max-content">Die Spring</a>
+                    <a (click)="showProduct(6)" class="font" style="width: max-content">Feeding Spring</a>
+                    <!-- <a (click)="showProduct(7)" class="font" style="width: max-content">Garter Spring</a> -->
+                    <a (click)="showAllProduct()" class="font" style="width: max-content;color: #f99831;">Show All</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <div class="nav-link text-truncate font">Process
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <div class="dropdown-content">
+                <div class="col-sm-12" style="display: flex;width: max-content">
+                  <div class="col-sm-6">
+                    <a (click)="navigateToSection('spy4')" class="font" style="width: max-content">Raw Material</a>
+                    <a (click)="navigateToSection('spy4')" class="font" style="width: max-content">Manufacturing</a>
+                    <a (click)="navigateToSection('spy4')" class="font" style="width: max-content">Quality Check</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-truncate font" (click)="navigateToSection('spy1')">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-truncate font" (click)="navigateToSection('spy3')">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/asha_springs/" class="nav-link" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-truncate font">+91-8898487556/9821074837</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="nav-link" href="#">
+          <img src ="assets/Images/logo.png" style="padding-left:5%; height:7ex">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav" style="padding-right: 10px;">
+            <ul class="navbar-nav bg-light m-0 ml-lg-auto p-3 p-lg-0">
+                <li class="d-inline d-lg-none">
+                    <button data-toggle="collapse" data-target="#nav" class="close float-right">&times;</button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-truncate font"  href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                      <div class="nav-link text-truncate font">Product
+                        <i class="fa fa-caret-down"></i>
+                      </div>
+                      <div class="dropdown-content">
+                        <div class="col-sm-12" style="display: flex;width: max-content">
+                          <div class="col-sm-6">
+                            <a (click)="showProduct(1)" class="font" style="width: max-content">Compression Spring</a>
+                            <a (click)="showProduct(2)" class="font" style="width: max-content">Tension Spring</a>
+                            <a (click)="showProduct(3)" class="font" style="width: max-content">Extension Spring</a>
+                            <a (click)="showProduct(4)" class="font" style="width: max-content">Torsion Spring</a>
+                            <a (click)="showProduct(5)" class="font" style="width: max-content">Die Spring</a>
+                            <a (click)="showProduct(6)" class="font" style="width: max-content">Feeding Spring</a>
+                            <a (click)="showProduct(7)" class="font" style="width: max-content">Garter Spring</a>
+                            <a (click)="showAllProduct()"  class="font" style="width: max-content;color: #f99831;">Show All</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-truncate font" (click)="navigateToSection('spy1')">About Us</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link text-truncate font" (click)="navigateToSection('spy3')">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+</div>
+<div>
+
+</div>
